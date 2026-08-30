@@ -18,6 +18,11 @@ const routes = [
 await rm(outputDir, { recursive: true, force: true });
 await mkdir(outputDir, { recursive: true });
 await cp(path.resolve('dist/client'), outputDir, { recursive: true });
+await writeFile(
+  path.join(outputDir, '.htaccess'),
+  'DirectoryIndex index.html index.htm\nErrorDocument 404 /404.html\n',
+  'utf8',
+);
 
 for (const route of routes) {
   const response = await fetch(`${origin}${route}`);
