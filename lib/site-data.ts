@@ -1,6 +1,7 @@
 export const siteConfig = {
   name: 'Гостевой дом «Ореховая 23А»',
   shortName: 'Ореховая 23А',
+  siteUrl: 'https://sqlm38.tmweb.ru',
   location: 'Архипо-Осиповка',
   region: 'Краснодарский край',
   country: 'Россия',

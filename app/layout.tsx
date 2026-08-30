@@ -8,7 +8,7 @@ const description =
   'Гостевой дом «Ореховая 23А» в Архипо-Осиповке. 5 минут пешком до моря. Двухместные, трёхместные и пятиместные номера. Проживание от 1 500 ₽ с человека. Прямое бронирование.';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://orehovaya-23a.example'),
+  metadataBase: new URL(siteConfig.siteUrl),
   title: {
     default: title,
     template: '%s | Ореховая 23А',

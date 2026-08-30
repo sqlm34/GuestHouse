@@ -39,3 +39,5 @@ next-env.d.ts
 /lh-report.json
 /.tmp/
 /site-archive.tar.gz
+/timeweb-dist/
+/timeweb-site.zip
