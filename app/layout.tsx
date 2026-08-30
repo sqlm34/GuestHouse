@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     description,
     type: 'website',
     locale: 'ru_RU',
-    images: ['/images/hero/guest-house-hero.webp'],
+    images: ['/images/hero/guest-house-hero.webp?v=20260830-2'],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
-    images: ['/images/hero/guest-house-hero.webp'],
+    images: ['/images/hero/guest-house-hero.webp?v=20260830-2'],
   },
   alternates: {
     canonical: '/',

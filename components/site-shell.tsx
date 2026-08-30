@@ -75,7 +75,7 @@ export function MobileBar() {
 export function PageHero({
   title,
   text,
-  image = '/images/hero/guest-house-hero.webp',
+  image = '/images/hero/guest-house-hero.webp?v=20260830-2',
 }: {
   title: string;
   text: string;

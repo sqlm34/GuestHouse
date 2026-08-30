@@ -10,7 +10,7 @@ export default function Home() {
       <section className="hero">
         <img
           className="hero-bg"
-          src="/images/hero/guest-house-hero.webp"
+          src="/images/hero/guest-house-hero.webp?v=20260830-2"
           alt="Территория гостевого дома Ореховая 23А"
           fetchPriority="high"
         />
