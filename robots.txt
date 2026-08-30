@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://sqlm38.tmweb.ru/sitemap.xml
