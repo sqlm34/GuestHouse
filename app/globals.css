@@ -2,8 +2,26 @@
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 
+@font-face {
+  font-family: 'Unbounded';
+  src: url('/fonts/unbounded-cyrillic.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('/fonts/unbounded-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 @theme inline {
-  --font-sans: Arial, sans-serif;
+  --font-sans: 'Unbounded', Arial, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
@@ -35,7 +53,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, sans-serif;
+  font-family: 'Unbounded', Arial, sans-serif;
   line-height: 1.5;
 }
 a { color: inherit; text-decoration: none; }
@@ -96,7 +114,7 @@ button, input, select, textarea { font: inherit; }
 }
 .hero-content { position: relative; width: min(760px, calc(100% - 36px)); margin-left: clamp(18px, 7vw, 86px); color: #fff; padding: 58px 0 110px; }
 .eyebrow, .section-kicker { font-size: 14px; font-weight: 900; letter-spacing: 0; text-transform: uppercase; }
-.hero h1 { margin: 14px 0; font-size: clamp(40px, 7vw, 82px); line-height: .98; letter-spacing: 0; }
+.hero h1 { margin: 14px 0; font-size: clamp(38px, 4.6vw, 62px); line-height: 1.04; letter-spacing: 0; text-wrap: balance; }
 .hero-lead { max-width: 610px; font-size: clamp(18px, 2.2vw, 25px); font-weight: 700; }
 .hero-facts { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0; }
 .hero-facts span { display: inline-flex; align-items: center; gap: 8px; border-radius: 8px; background: rgba(255,255,255,.14); padding: 10px 13px; font-weight: 800; }
@@ -218,7 +236,7 @@ textarea { resize: vertical; }
   .header-cta { min-height: 40px; padding: 0 12px; font-size: 13px; }
   .hero { min-height: 690px; }
   .hero-content { width: calc(100% - 30px); margin-inline: 15px; padding-top: 34px; padding-bottom: 126px; }
-  .hero h1 { font-size: clamp(38px, 13vw, 54px); }
+  .hero h1 { font-size: clamp(30px, 9vw, 38px); }
   .hero-actions, .card-actions, .location-strip, .site-footer, .footer-links { align-items: stretch; flex-direction: column; }
   .primary-btn, .outline-btn, .ghost-btn, .outline-dark-btn { width: 100%; }
   .feature-strip { grid-template-columns: 1fr; }
